@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Ford | Contato</title>
+    <link rel="shortcut icon" href="https://favicon.im/ford.com?larger=true" type="image/x-icon">
+    <link rel='stylesheet' href='../css/reset.css'>
+    <link rel='stylesheet' href='../css/contact.css'>
+</head>
+
+<body>
+    <main>
+        <header>
+                <div class="logo">
+                    <img src="../img/logo-ford-256.png" alt="Logo da Ford">
+                </div>
+                <div class="nav-container">
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../pages/releases.html">Lançamento</a></li>
+                            <li><a href="" class="active">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        <form onsubmit="Post(event, this)" enviar();>
+            <section>
+                <div class="container">
+                    <div class="car-img">
+                        <img src="../img/xls 2.2 diesel.jpg" alt="Xls 2.2 diesel">
+                    </div>
+                    <div class="form-area">
+                        <div class="form-header">
+                            <h2>Sobre Você</h2>
+                        </div>
+
+                        <div class="campo">
+                            <input type="text" name="nome" id="nome" minlength="1" maxlength="255" placeholder="NOME&ast;" required/>
+                        </div>
+
+                        <div class="campo">
+                            <input type="email" name="email" id="email" placeholder="EMAIL&ast;" required/>
+                        </div>
+
+                        <div class="campo">
+                            <input type="text" name="cpf" id="cpf" placeholder="CPF&ast;" required />
+                        </div>
+
+                        <div class="campo">
+                            <input type="text" name="sobrenome"id="sobrenome" minlength="1" maxlength="255" placeholder="SOBRENOME&ast;" required/>
+                        </div>
+
+                        <div class="campo">
+                            <input type="tel" name="telefone" id="telefone" placeholder="TELEFONE&ast;" required />
+                        </div>
+
+                        <div class="campo">
+                            <select name="contato" id="contato">
+                                <option value="" disabled selected>COMO DESEJA SER CONTATADO</option>
+                                <option value="TELEFONE">TELEFONE</option>
+                                <option value="EMAIL">EMAIL</option>  
+                            </select>
+                        </div>
+
+                        <div class="btn">
+                            <button type="submit" id="btnEnviar" class="btnEnviar">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </form>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <span>Redes Sociais</span>
+                <div class="s-icons">
+                    <a href="https://www.facebook.com/FordBrasil/" target="_blank" title="Visite nosso Facebook!">
+                        <img src="../img/facebook-50.png" alt="Facebook Ford" />
+                    </a>
+                    <a href="https://www.youtube.com/fordbrasil" target="_blank" title="Visite nosso YouTube!">
+                        <img src="../img/youtube-squared-50.png" alt="YouTube Ford" />
+                    </a>
+                    <a href="https://www.instagram.com/fordbrasil/" target="_blank" title="Visite nosso Instagram!">
+                        <img src="../img/instagram-logo-50.png" alt="Instagram Ford" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <span>Copyright © 2025 Ford Motor Company - Todos os direitos reservados</span>
+            </div>
+
+            <div class="f-logo">
+                <img src="../img/ford-96.png" alt="Logo da Ford">
+            </div>
+        </div>
+    </footer>
+    <script src="../js/forms.js"></script>
+</body>
+
+</html>

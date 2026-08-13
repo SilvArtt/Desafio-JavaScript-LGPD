@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Ford | Home</title>
+    <link rel="shortcut icon" href="https://favicon.im/ford.com?larger=true" type="image/x-icon">
+    <link rel='stylesheet' href='css/reset.css'>
+    <link rel='stylesheet' href='css/index.css'>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="logo">
+                <img src="img/logo-ford-256.png" alt="Logo da Ford">
+            </div>
+            <div class="nav-container">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="" class="active">Home</a></li>
+                        <li><a href="pages/releases.html">Lançamento</a></li>
+                        <li><a href="pages/contact.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div class="container">
+
+                <div class="btn">
+                    <button type="button" id="prevBtn" class="btnVoltarAvancar" onclick="Carousel.Previous()" aria-label="Imagem anterior"></button>
+                </div>
+
+                <div id="carousel"></div>
+                <div id="carousel-title"></div>
+
+                <div class="btn">
+                    <button type="button" id="nextBtn" class="btnVoltarAvancar" onclick="Carousel.Next()" aria-label="Próxima imagem"></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <span>Redes Sociais</span>
+                <div class="s-icons">
+                    <a href="https://www.facebook.com/FordBrasil/" target="_blank" title="Visite nosso Facebook!">
+                        <img src="img/facebook-50.png" alt="Facebook Ford" />
+                    </a>
+                    <a href="https://www.youtube.com/fordbrasil" target="_blank" title="Visite nosso YouTube!">
+                        <img src="img/youtube-squared-50.png" alt="YouTube Ford" />
+                    </a>
+                    <a href="https://www.instagram.com/fordbrasil/" target="_blank" title="Visite nosso Instagram!">
+                        <img src="img/instagram-logo-50.png" alt="Instagram Ford" />
+                    </a>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <span>Copyright © 2025 Ford Motor Company - Todos os direitos reservados</span>
+            </div>
+
+            <div class="f-logo">
+                <img src="img/ford-96.png" alt="Logo da Ford">
+            </div>
+        </div>
+    </footer>
+    <script src="js/carousel.js"></script>
+    <script>
+        const slides = [];
+        slides.push(new Carousel("img/imagem_1.jpg", "Esta é a nova Ranger Ford 2022. Verifique novidades.", "pages/releases.html"));
+        slides.push(new Carousel("img/imagem_2.jpg", "Ford a nossa história", "#"));
+        slides.push(new Carousel("img/imagem_3.jpg", "Nova Ford Bronco Sport 2022", "pages/releases.html"));
+        Carousel.Start(slides);
+    </script>
+</body>
+
+</html>
