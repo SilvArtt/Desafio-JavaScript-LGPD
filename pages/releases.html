@@ -43,7 +43,7 @@
                         <div class="infocar">
                             <div>
                                 <input type="checkbox" value="car1" class="checkbox"
-                                    onchange="SetCarToCompare(this, new Car('XL Cabine Simples 2.2 Diesel 4X4 MT 2022', 183850, 511, 1821, 232, 1234, 2.2, 160, 1420, 'Aço Estampado 16', 'img/XL Cabine.jpg'));">
+                                    onchange="SetCarToCompare(this, new Car('XL Cabine Simples 2.2 Diesel 4X4 MT 2022', 183850, 511, 1821, 232, 1234, 2.2, 160, 1420, 'Aço Estampado 16', '../img/XL Cabine.jpg'));">
                             </div>
                             <div class="info">
                                 <span class="textmodel">XL Cabine Simples 2.2 Diesel 4X4 MT 2022</span>
@@ -59,7 +59,7 @@
                         <div class="infocar">
                             <div>
                                 <input type="checkbox" value="car1" class="checkbox"
-                                    onchange="SetCarToCompare(this, new Car('XLS 2.2 Diesel 4X4 AT 2022', 220690, 511, 1821, 232, 1076, 2.2, 160, 1180, 'Aço Estampado 16', 'img/xls 2.2 diesel.jpg'));">
+                                    onchange="SetCarToCompare(this, new Car('XLS 2.2 Diesel 4X4 AT 2022', 220690, 511, 1821, 232, 1076, 2.2, 160, 1180, 'Aço Estampado 16', '../img/xls 2.2 diesel.jpg'));">
                             </div>
                             <div class="info">
                                 <span class="textmodel">XLS 2.2 Diesel 4X4 AT 2022</span>
@@ -75,7 +75,7 @@
                         <div class="infocar">
                             <div>
                                 <input type="checkbox" value="car1" class="checkbox"
-                                    onchange="SetCarToCompare(this, new Car('Storm 3.2 Diesel 4X4 AT 2022', 222790, 511, 1821, 232, 1040, 3.2, 200, 1180, 'Liga Leve 17', 'img/storm.jpg'));">
+                                    onchange="SetCarToCompare(this, new Car('Storm 3.2 Diesel 4X4 AT 2022', 222790, 511, 1821, 232, 1040, 3.2, 200, 1180, 'Liga Leve 17', '../img/storm.jpg'));">
                             </div>
                             <div class="info">
                                 <span class="textmodel">Storm 3.2 Diesel 4X4 AT 2022</span>
@@ -91,7 +91,7 @@
         </section>
         <section>
             <div class="Btn">
-                <button type="button" id="btnComparar">Comparar Carros</button>
+                <button type="button" id="btnComparar" onclick="ShowCompare()">Comparar Carros</button>
             </div>
         </section>
     </main>
@@ -183,7 +183,7 @@
             
         </table>
         <div style="text-align: center;padding-bottom: 20px;">
-            <button type="button" style="height: 40px; width: 200px;" onclick="HideCompare()">Fechar</button>
+            <button type="button" style="height: 40px; width: 200px; margin-top: 10px;" onclick="HideCompare()">Fechar</button>
         </div> 
     </div>
     <script src="../js/compare.js"></script>   

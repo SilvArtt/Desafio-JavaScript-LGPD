@@ -28,17 +28,18 @@
         </header>
         <section>
             <div class="container">
+                <div class="carousel-wrapper">
+                    <button type="button" id="prevBtn" class="btnVoltarAvancar prev" onclick="Carousel.Previous()"
+                        aria-label="Imagem anterior"></button>
 
-                <div class="btn">
-                    <button type="button" id="prevBtn" class="btnVoltarAvancar" onclick="Carousel.Previous()" aria-label="Imagem anterior"></button>
+                    <div id="carousel"></div>
+
+                    <button type="button" id="nextBtn" class="btnVoltarAvancar next" onclick="Carousel.Next()"
+                        aria-label="Próxima imagem"></button>
                 </div>
 
-                <div id="carousel"></div>
+                <!-- Título da imagem do lado de fora/abaixo -->
                 <div id="carousel-title"></div>
-
-                <div class="btn">
-                    <button type="button" id="nextBtn" class="btnVoltarAvancar" onclick="Carousel.Next()" aria-label="Próxima imagem"></button>
-                </div>
             </div>
         </section>
     </main>

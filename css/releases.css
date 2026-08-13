@@ -301,11 +301,11 @@ footer {
     white-space: nowrap;
 }
 
-#compare td img{
-    max-width: 120px;
+#compare td img {
     width: 100%;
+    max-width: 140px;
     height: auto;
-    object-fit: contain;
+    display: block;
 }
 
 #compare > div{
