@@ -13,20 +13,20 @@
 <body>
     <main>
         <header>
-                <div class="logo">
-                    <img src="../img/logo-ford-256.png" alt="Logo da Ford">
-                </div>
-                <div class="nav-container">
-                    <nav>
-                        <ul class="menu">
-                            <li><a href="../index.html">Home</a></li>
-                            <li><a href="../pages/releases.html">Lançamento</a></li>
-                            <li><a href="" class="active">Contato</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-        <form onsubmit="Post(event, this)" enviar();>
+            <div class="logo">
+                <img src="../img/logo-ford-256.png" alt="Logo da Ford">
+            </div>
+            <div class="nav-container">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/releases.html">Lançamento</a></li>
+                        <li><a href="" class="active">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <form onsubmit="Post(event, this)">
             <section>
                 <div class="container">
                     <div class="car-img">
@@ -38,11 +38,12 @@
                         </div>
 
                         <div class="campo">
-                            <input type="text" name="nome" id="nome" minlength="1" maxlength="255" placeholder="NOME&ast;" required/>
+                            <input type="text" name="nome" id="nome" minlength="1" maxlength="255"
+                                placeholder="NOME&ast;" required />
                         </div>
 
                         <div class="campo">
-                            <input type="email" name="email" id="email" placeholder="EMAIL&ast;" required/>
+                            <input type="email" name="email" id="email" placeholder="EMAIL&ast;" required />
                         </div>
 
                         <div class="campo">
@@ -50,7 +51,8 @@
                         </div>
 
                         <div class="campo">
-                            <input type="text" name="sobrenome"id="sobrenome" minlength="1" maxlength="255" placeholder="SOBRENOME&ast;" required/>
+                            <input type="text" name="sobrenome" id="sobrenome" minlength="1" maxlength="255"
+                                placeholder="SOBRENOME&ast;" required />
                         </div>
 
                         <div class="campo">
@@ -61,19 +63,36 @@
                             <select name="contato" id="contato">
                                 <option value="" disabled selected>COMO DESEJA SER CONTATADO</option>
                                 <option value="TELEFONE">TELEFONE</option>
-                                <option value="EMAIL">EMAIL</option>  
+                                <option value="EMAIL">EMAIL</option>
                             </select>
                         </div>
 
+                        <div>
+                            <p>Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você. A
+                                qualquer momento, será possível editar ou remover tais dados.</p>
+
+                            <a href="https://www.ford.com.br/politica-de-privacidade/" target="_blank">Termos e Condições</a>
+                        </div>
+
+                        <div class="checkbox-form">
+                            <input type="checkbox" name="agreement-checkbox" id="agreement-checkbox">
+                            <label for="agreement-checkbox">Sim. Li e concordo com os Termos e Condições.</label>
+                        </div>
+
+                        <div class="checkbox-form">
+                            <input type="checkbox" name="news-checkbox" id="news-checkbox">
+                            <label for="news-checkbox">Sim. Também quero receber descontos e novidades.</label>
+                        </div>
+
                         <div class="btn">
-                            <button type="submit" id="btnEnviar" class="btnEnviar">Enviar</button>
+                            <button type="submit" id="submitBtn" class="btnEnviar" disabled>Enviar</button>
                         </div>
                     </div>
                 </div>
             </section>
         </form>
     </main>
-    
+
     <footer>
         <div class="footer-container">
             <div class="social-media">

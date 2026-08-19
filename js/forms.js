@@ -27,16 +27,20 @@ function Post(event, form) {
         form.contato.value
     );
 
-    console.log("Dados capturados do formulário:", data);
-    
-    AvisoPost(data.nome, data.sobrenome);
+    if(data){
+        console.log("Dados capturados do formulário:", data);
+        avisoPost(data.nome, data.sobrenome);
+        form.reset();
+        validationCheck();
+        return data;
 
-    form.reset();
-    
-    return data;
+    }else{
+        console.log("Houve Erro na Captura dos Dados!")
+        return null;
+    }
 }
 
-function AvisoPost() {
+function avisoPost() {
     let name = document.getElementById("nome");
     let lstname = document.getElementById("sobrenome");
 
@@ -44,6 +48,27 @@ function AvisoPost() {
         alert(`Obrigado sr(a) ${name.value} ${lstname.value}, seus dados foram encaminhados com sucesso`);
     }
 }
+
+function validationCheck(){
+    const checkboxAgt = document.getElementById("agreement-checkbox");
+    const subButton = document.getElementById("submitBtn");
+
+    const isChecked = checkboxAgt.checked;
+
+    if(!isChecked){
+         subButton.disabled = true;
+    }else{
+         subButton.disabled = false;
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {  
+    const checkboxAgt = document.getElementById("agreement-checkbox");
+    
+    checkboxAgt.addEventListener("change", validationCheck);
+    validationCheck();
+});
+ 
 
     
 
